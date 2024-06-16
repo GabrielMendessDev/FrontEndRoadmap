@@ -24,7 +24,7 @@ header img{
 }
 
 header a{
-    color: rgb(205, 202, 202);
+    color: white;
     text-decoration: none;
     margin: .5rem;
     transition: all 0.4s;
@@ -32,7 +32,7 @@ header a{
 
 header a:hover{
     cursor: pointer;
-    color: white;
+    color: rgb(30, 30, 255);
 }
 
 section{
@@ -140,7 +140,7 @@ section{
 }
 
 .containerMain .saiba-mais a:hover{
-    color: white;
+    color: rgb(30, 30, 255);
 }
 
 /*Contact*/
@@ -177,13 +177,33 @@ spf:hover{
 }
 
 @media only screen and (max-width: 480px) {
-    .containerMain .containerContent{
-        flex-direction: column;
-    }
-
     .containerMain .containerImg img{
         height: 40px;
         width: 40px;
+    }
+
+    .containerMain .containerContent p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: white;
+        text-align: justify;
+        padding: 1rem 1rem 0.3rem 1rem;
+        transition: all 0.4s;
+    }
+    
+    .containerMain .containerContent ul li {
+       font-size: 0.8rem;
+    }
+
+    .containerMain h1{
+        font-size: 1.5rem;
+    }
+
+    .containerMain .saiba-mais a{
+        color: rgb(205, 202, 202);
+        font-weight: 500;
+        font-size: 0.8rem;
+        transition: all .4s;
     }
 
 }
