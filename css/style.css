@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -14,8 +18,8 @@ header{
     background-color: #191919;
     justify-content: space-between;
     position: fixed;
-    
     width: 100%;
+    z-index: 1;
     box-shadow: -8px 4px 47px -4px rgba(7, 7, 208, 0.483);
 }
 
