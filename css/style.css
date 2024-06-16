@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    box-shadow: -8px 4px 47px -4px rgba(7, 7, 208, 0.483);
+}
+
+header img{
+    height: 5vh;
+    margin: .8rem;
+}
+
+header a{
+    color: rgb(205, 202, 202);
+    text-decoration: none;
+    margin: .5rem;
+    transition: all 0.4s;
+}
+
+header a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+.containerMain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #191919;
+    padding: 3rem;
+}
+
+.containerMain h1{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: .5rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    transition: all 0.3s;
+}
+
+
+.containerMain .containerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    max-width: 30rem;
+    border-radius: .3rem;
+    box-shadow: -8px 4px 47px -4px rgba(7, 7, 208, 0.483);
+}
+
+.containerImg{
+    position: relative;
+}
+
+.containerMain .containerImg img{
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    opacity: 0.6;
+    right: 0;
+    top: 0;
+}
+
+.containerMain .containerContent p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    transition: all 0.4s;
+}
+
+.containerMain .containerContent ul {
+    list-style: none; /* Remove o marcador padrão */
+    padding: 2rem;
+}
+
+.containerMain .containerContent ul li {
+    color: white;
+    padding: 0.5rem 2rem; /* Adiciona espaçamento entre os itens */
+    border: 1px solid rgba(7, 7, 208, 0.483); /* Borda suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 0.5rem; /* Espaçamento entre os itens */
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    transition: background 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+.containerMain .containerContent ul li::before {
+    content: '\f00c'; /* Código Unicode do ícone (fa-check) */
+    font-family: 'Font Awesome 5 Free'; /* Define a fonte */
+    font-weight: 900; /* Define o peso do ícone */
+    margin-right: 1rem; /* Espaço entre o ícone e o texto */
+    color: #4CAF50; /* Cor do ícone */
+}
+
+
+.containerMain .containerContent ul li:hover {
+    background: rgba(7, 7, 208, 0.483); /* Fundo um pouco mais claro no hover */
+    box-shadow: -8px 4px 47px -4px rgba(7, 7, 208, 0.483);
+}
+
+
+.containerMain .saiba-mais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.containerMain .saiba-mais a{
+    color: rgb(205, 202, 202);
+    font-weight: 500;
+    transition: all .4s;
+}
+
+.containerMain .saiba-mais a:hover{
+    color: white;
+}
+
+/*Contact*/
+.contact {
+    width: 100%;
+    overflow: hidden;
+    background: #0f0e0e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #c6d0d1;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer h4 {
+    font-size: 1rem;
+}
+
+spf {
+    color: rgba(7, 7, 208, 0.483);
+    transition: all 0.4s;
+}
+
+spf:hover{
+    color: rgb(255, 0, 0);
+}
+
+@media (screen <= 40rem){
+    html{
+        font-size: 70%;
+    }
+}
