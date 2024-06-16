@@ -63,6 +63,7 @@ section{
 
 .containerMain .containerContent{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
@@ -79,7 +80,7 @@ section{
     height: 48px;
     width: 48px;
     position: absolute;
-    opacity: 0.6;
+    opacity: 0.8;
     right: 0;
     top: 0;
 }
@@ -89,7 +90,7 @@ section{
     font-weight: 400;
     color: white;
     text-align: left;
-    padding: 1rem 1.5rem;
+    padding: 1rem 3rem 0.3rem 3rem;
     transition: all 0.4s;
 }
 
@@ -174,8 +175,18 @@ spf:hover{
     color: rgb(255, 0, 0);
 }
 
-@media (screen <= 40rem){
+@media only screen and (max-width: 480px) {
     html{
         font-size: 70%;
     }
+
+    .containerMain .containerContent{
+        flex-direction: column;
+    }
+
+    .containerMain .containerImg img{
+        height: 40px;
+        width: 40px;
+    }
+
 }
