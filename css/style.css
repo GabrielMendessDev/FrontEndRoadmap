@@ -176,10 +176,6 @@ spf:hover{
 }
 
 @media only screen and (max-width: 480px) {
-    html{
-        font-size: 70%;
-    }
-
     .containerMain .containerContent{
         flex-direction: column;
     }
