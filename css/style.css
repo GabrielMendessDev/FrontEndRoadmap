@@ -217,11 +217,12 @@ spf:hover{
         transition: all .4s;
     }
 
-    .footer p{
+    .contact {
         font-size: 0.8rem;
     }
 
-    header a{
+    .footer p {
+        font-weight: 400;
         font-size: 0.8rem;
     }
 }
