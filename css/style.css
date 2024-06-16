@@ -31,13 +31,27 @@ header img{
 header a{
     color: white;
     text-decoration: none;
-    margin: .5rem;
+    margin: .6rem;
+    margin-right: 1.5rem;
     transition: all 0.4s;
 }
 
 header a:hover{
     cursor: pointer;
     color: rgb(30, 30, 255);
+}
+
+
+#menuMobile{
+    display: none;
+    flex-direction: column;
+    text-align: justify;
+}
+
+#btnMenu{
+    background: none;
+    display: none;
+    cursor: pointer;
 }
 
 section{
@@ -195,6 +209,18 @@ spf:hover{
     .containerMain .containerImg img{
         height: 40px;
         width: 40px;
+    }
+
+    #menuDesktop{
+        display: none;
+    }
+
+    #menuMobile{
+        display: none;
+    }
+
+    #btnMenu{
+        display: flex;
     }
 
     .containerMain .containerContent p{

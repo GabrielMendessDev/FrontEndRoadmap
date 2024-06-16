@@ -11,7 +11,7 @@
   <body>
     <header>
       <a href="http://github.com/GabrielMendessDev" target="_blank"> <img src="./assets/fav.ico" alt="logo-gabriel" /></a>
-      <nav class="menu">
+      <nav id="menuDesktop" class="menu">
         <a href="#roadmap">Roadmap</a>
         <a href="#html">HTML</a>
         <a href="#css">CSS</a>
@@ -19,9 +19,24 @@
         <a href="#javascript">JavaScript</a>
         <a href="#typescript">TypeScript</a>
         <a href="#react">React</a>
+        <a href="#desenvolvedor">Desenvolvedor do site</a>
       </nav>
+
+      <nav id="menuMobile" class="menu-mobile">
+        <a href="#roadmap">Roadmap</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#tailwind">Tailwind CSS</a>
+        <a href="#javascript">JavaScript</a>
+        <a href="#typescript">TypeScript</a>
+        <a href="#react">React</a>
+        <a href="#desenvolvedor">Desenvolvedor do site</a>
+      </nav>
+
+      <button id="btnMenu"><img src="./assets/menu.png" alt=""></button>
     </header>
     <section>
+
         <!-- O QUE É UM ROADMAP? -->
       <div id="roadmap" class="containerMain">
         <h1 class="title">O que é um Roadmap?</h1>
@@ -178,11 +193,12 @@
 
     </section>
     <footer>
-    <section class="contact" id="contact">
+    <section id="desenvolvedor" class="contact" id="contact">
             <div class="footer">
                 <p>&copy Desenvolvido por <a href="https://instagram.com/dev_gabrielmendes"><spf>Gabriel Mendes</spf></a></p>
             </div>
         </footer>
     </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>
