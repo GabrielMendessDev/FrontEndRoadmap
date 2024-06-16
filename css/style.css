@@ -14,6 +14,7 @@ header{
     background-color: #191919;
     justify-content: space-between;
     position: fixed;
+    
     width: 100%;
     box-shadow: -8px 4px 47px -4px rgba(7, 7, 208, 0.483);
 }
@@ -163,17 +164,27 @@ section{
     margin-bottom: 1rem;
 }
 
-.footer h4 {
+.footer p {
+    font-weight: 400;
     font-size: 1rem;
 }
 
+.footer a{
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
 spf {
-    color: rgba(7, 7, 208, 0.483);
+    color: rgb(9, 9, 240);
     transition: all 0.4s;
 }
 
 spf:hover{
-    color: rgb(255, 0, 0);
+    color: rgb(231, 227, 240);
 }
 
 @media only screen and (max-width: 480px) {
@@ -206,4 +217,11 @@ spf:hover{
         transition: all .4s;
     }
 
+    .footer p{
+        font-size: 0.8rem;
+    }
+
+    header a{
+        font-size: 0.8rem;
+    }
 }
