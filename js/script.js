@@ -1,7 +1,8 @@
 const btnMenu = document.getElementById('btnMenu');
 const menuMobile = document.getElementById('menuMobile');
+menuMobile.style.display = 'none';
 
-function clickMenu(){
+function clickMenu(){  
     if(menuMobile.style.display == 'none'){
         menuMobile.style.display = 'flex';
     }else{
