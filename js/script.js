@@ -5,10 +5,12 @@ menuMobile.style.display = 'none';
 function clickMenu(){  
     if(menuMobile.style.display == 'none'){
         menuMobile.style.display = 'flex';
-    }else if(menuMobile.style.display == 'flex'){
-        menuMobile.style.animation = 'slideRight 0.6s forwards'
+        menuMobile.style.animation = 'slideLeft 0.6s forwards';
     }else{
-        menuMobile.style.display = 'none';
+        menuMobile.style.animation = 'slideRight 0.6s forwards';
+        setTimeout(() => {
+            menuMobile.style.display = 'none';
+        }, 600)
     }
 }
 
