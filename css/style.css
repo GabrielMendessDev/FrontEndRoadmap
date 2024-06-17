@@ -66,6 +66,15 @@ header a:hover{
     }
 }
 
+@keyframes slideRight {
+    from {
+        right: 0;
+    }
+    to {
+        right: -15rem;
+    }
+}
+
 .section #menuMobile a{
     text-decoration: none;
     color: white;
