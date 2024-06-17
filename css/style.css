@@ -42,10 +42,27 @@ header a:hover{
 }
 
 
-#menuMobile{
+.section #menuMobile{
     display: none;
+    background: #191919;
     flex-direction: column;
     text-align: justify;
+    z-index: 1;
+    padding: 0.6rem;
+    position: fixed;
+    align-items: center;
+    right: 0;
+    top: 5.5rem;
+}
+
+.section #menuMobile a{
+    text-decoration: none;
+    color: white;
+}
+
+.section #menuMobile a:hover{
+    cursor: pointer;
+    color: rgb(30, 30, 255);
 }
 
 #btnMenu{
@@ -57,6 +74,7 @@ header a:hover{
 section{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .containerMain{
@@ -175,6 +193,25 @@ section{
     color: #c6d0d1;
 }
 
+.contact .footer .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.contact .footer .social a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.contact .footer .social a:hover{
+    transform: translateY(-.4rem);
+    transition: all 0.4s;
+    color: rgb(30, 30, 255);
+}
+
 
 .footer {
     text-align: center;
@@ -215,7 +252,7 @@ spf:hover{
         display: none;
     }
 
-    #menuMobile{
+    .section #menuMobile{
         display: none;
     }
 
